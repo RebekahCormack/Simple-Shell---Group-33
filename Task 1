@@ -17,7 +17,19 @@ fgets(input, 512, stdin);
     while (token != NULL) {
         printf("%s\n", token);
         token = strtok(NULL, " \t|><&;");
+      }
+    return 0;
+  }
 
-}
-return 0;
-}
+
+//Continuous reading and processing
+strcmp(token,\t|><&);
+
+   
+    int num = 0; 
+    printf("- ");
+    while (num != EOF) {
+        num = scanf(" %s", &s);
+        printf("- ");
+    }
+    return 0;
