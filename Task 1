@@ -7,37 +7,30 @@ int main(){
 
 //  prompting user and storing input //
 char input[512];
-int num = 0; 
-
-printf("please enter an input: ");
-fgets(input, 512, stdin);
-  input[strcspn(input, "\n")] = 0;
-
-
-
-// parsing the input, for example, splitting it by spaces  //
-
-char *token = strtok(input, " \t|><&;");
-while (token != NULL) {
-    printf("%s\n", token);
-    token = strtok(NULL, " \t|><&;");
-  }
-return 0;
+char* num = 0; 
+while(1){
+	printf("please enter an input: ");
+	num = fgets(input, 512, stdin);
+	  input[strcspn(input, "\n")] = 0;
 
 
-// stop if the user types exit //
 
-if (!strcmp(input, "exit\n")) {    
-            break;
-        }
+	// parsing the input, for example, splitting it by spaces  //
 
-// stop if the user types <ctrl>-D   //
+	char *token = strtok(input, " \t|><&;");
+	while (token != NULL) {
+	    printf("%s\n", token);
+	    token = strtok(NULL, " \t|><&;");
+	  }
 
-printf("- ");
-while (num != EOF) {
-    num = scanf(" %s", &s);
-    printf("- ");
-  }
+
+	// stop if the user types exit //
+
+	if (num == NULL || (0==strcmp(input, "exit"))) {    
+		    break;
+		}
+
+}
   return 0;
 
 
