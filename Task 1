@@ -20,8 +20,10 @@ while (token != NULL) {
   }
 return 0;
 
-//Continuous reading and processing
-strcmp("exit","\t|><&");
+/// stop if the user types exit //
+if (!strcmp(input, "exit\n")) {    
+            break;
+        }
 
    
 int num = 0; 
