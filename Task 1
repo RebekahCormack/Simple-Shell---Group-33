@@ -24,7 +24,7 @@ return 0;
 
 
 //Continuous reading and processing
-strcmp(token,\t|><&);
+strcmp(token,"\t|><&");
 
    
     int num = 0; 
