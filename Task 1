@@ -21,3 +21,16 @@ fgets(input, 512, stdin);
 }
 return 0;
 }
+
+
+//Continuous reading and processing
+strcmp(token,\t|><&);
+
+   
+    int num = 0; 
+    printf("- ");
+    while (num != EOF) {
+        num = scanf(" %s", &s);
+        printf("- ");
+    }
+    return 0;
