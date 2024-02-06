@@ -5,14 +5,18 @@ void display_prompt();
 
 int main(){
 
-//prompting user and storing input 
+//  prompting user and storing input //
 char input[512];
+int num = 0; 
 
 printf("please enter an input: ");
 fgets(input, 512, stdin);
   input[strcspn(input, "\n")] = 0;
-    
-// Parsing the input, for example, splitting it by spaces
+
+
+
+// parsing the input, for example, splitting it by spaces  //
+
 char *token = strtok(input, " \t|><&;");
 while (token != NULL) {
     printf("%s\n", token);
@@ -20,17 +24,22 @@ while (token != NULL) {
   }
 return 0;
 
-/// stop if the user types exit //
+
+// stop if the user types exit //
+
 if (!strcmp(input, "exit\n")) {    
             break;
         }
 
-   
-int num = 0; 
+// stop if the user types <ctrl>-D   //
+
 printf("- ");
 while (num != EOF) {
     num = scanf(" %s", &s);
     printf("- ");
   }
   return 0;
+
+
+
 }
